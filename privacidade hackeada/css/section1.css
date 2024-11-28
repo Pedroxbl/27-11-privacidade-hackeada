@@ -1,0 +1,59 @@
+/* Responsividade para a seção 1 */
+@media (max-width: 768px) {
+    .document-info {
+        flex-direction: column; /* Organiza os elementos em coluna */
+        align-items: center;
+    }
+
+    .poster img {
+        max-width: 100%; /* Garante que a imagem ocupe 100% da largura */
+        height: auto; /* Ajusta a altura automaticamente */
+        order: -1; /* Faz com que a imagem fique acima das informações */
+        margin-top: 0; /* Remove a margem superior da imagem */
+    }
+
+    .details {
+        padding: 10px; /* Ajusta o espaçamento nas informações */
+    }
+}
+.poster img {
+    max-width: 200%;
+    border-radius: 5px;
+    height: 390px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.document-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-family: Inter;
+}
+
+h2 {
+    font-family: JejuGhotic;
+    color: #0C102E;
+}
+
+strong {
+    font-family: JejuGhotic;
+}
+
+.details {
+    flex: 2;
+}
+  
+.trailer {
+    flex: 1;
+    text-align: center;
+    margin-right: 20px;
+}
+
+estrela {
+    color: #ff9500;
+}

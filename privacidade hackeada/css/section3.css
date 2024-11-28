@@ -1,0 +1,46 @@
+/* Seção de avaliações */
+.ratings {
+    display: flex;
+    justify-content: space-around; /* Espaço igual entre os itens */
+    align-items: center; /* Alinha verticalmente no centro */
+    gap: 20px; /* Espaçamento entre as avaliações */
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .rating-item {
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 120px; /* Largura fixa para manter os itens proporcionais */
+  }
+  
+  .rating-item h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #3a3a56;
+  }
+  
+  .rating-item img {
+    height: 75px;
+    margin-bottom: 10px;
+  }
+  
+  .rating-item p {
+    font-size: 1rem;
+    margin-top: 5px;
+    color: #555;
+  }
+  /* Responsividade para avaliações */
+@media (max-width: 768px) {
+    .ratings {
+        flex-direction: column; /* Exibe as avaliações em coluna */
+        gap: 10px;
+    }
+
+    .rating-item {
+        width: 100%; /* Garante que os itens de avaliação ocupem 100% da largura */
+    }
+}

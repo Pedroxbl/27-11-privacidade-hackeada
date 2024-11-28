@@ -1,0 +1,38 @@
+/* Seção de opiniões */
+.reviews {
+    margin-bottom: 30px;
+  }
+  
+  .reviews-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linhas se necessário */
+    gap: 20px; /* Espaçamento entre as opiniões */
+  }
+  
+  .reviews-container article {
+    flex: 1 1 calc(33.333% - 20px); /* Divide em 3 colunas responsivas */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #d7d8eb;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Títulos das opiniões */
+  .reviews-container article h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: #3a3a56;
+  }
+  
+/* Responsividade para as opiniões */
+@media (max-width: 768px) {
+    .reviews-container {
+        flex-direction: column; /* Organiza as opiniões em coluna em telas menores */
+        align-items: center;
+    }
+
+    .reviews-container article {
+        flex: 1 1 100%; /* As opiniões ocupam 100% da largura da tela */
+    }
+}

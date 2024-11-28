@@ -1,0 +1,31 @@
+.Título {
+    color: rgb(255, 255, 255);
+}
+
+.créditos {
+    font-family: JejuGhotic;
+    color: white;
+    font-size: 100%;
+}
+
+footer {
+    background-color: #757899;
+    text-align: center;
+}
+
+footer a {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+/* Responsividade no rodapé */
+@media (max-width: 768px) {
+    footer {
+        padding: 20px 10px; /* Ajuste de espaçamento para telas menores */
+    }
+
+    footer a {
+        display: inline-block; /* Exibe os links em linha, evitando sobreposição */
+        margin-right: 10px;
+    }
+}

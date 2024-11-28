@@ -1,0 +1,50 @@
+@import url(css/cabeçalho.css);
+@import url(css/rodapé.css);
+@import url(css/section1.css);
+@import url(css/section2.css);
+@import url(css/section3.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: JejuGhotic;
+    src: url(JejuGothic-Regular.ttf);
+}
+
+body {
+    background-image: linear-gradient(#CFD1F2, #FFFFFF);
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+p {
+    font-size: 80%;
+}
+
+/* Responsividade geral para o site */
+@media (max-width: 768px) {
+    body {
+        margin-left: 0;
+        margin-right: 0; /* Remove as margens laterais em telas pequenas */
+    }
+}
+
+/* Para telas menores que 480px */
+@media (max-width: 480px) {
+    body {
+        margin-left: 0;
+        margin-right: 0; /* Confirma a remoção da margem no celular */
+    }
+
+    .Título {
+        font-size: 1.2rem; /* Ajusta o tamanho do título para telas menores */
+    }
+
+    .poster img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .document-info {
+        padding: 0 10px;
+    }
+}

@@ -1,0 +1,27 @@
+.cabeçalho {
+    background-color: #757899;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 05px;
+    margin: 0 auto;
+}
+
+.Título {
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    font-family: JejuGhotic;
+}
+
+/* Responsividade no cabeçalho */
+@media (max-width: 768px) {
+    .cabeçalho {
+        flex-direction: column; /* Ajuste a direção para coluna em telas pequenas */
+        align-items: center;
+    }
+
+    .Título {
+        font-size: 1.5rem; /* Ajuste de tamanho de fonte para responsividade */
+    }
+}
